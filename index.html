@@ -1,0 +1,70 @@
+<html>
+<title>Form Submission</title>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<link rel="stylesheet" href="main.css">
+
+<script>
+
+</script>
+</head>
+<body>
+  <divp id ="flip" >
+  <h1 align="center" style='color:brown;font-family:"Courier" '><i>Click Me To Open The Form</i></h1>
+</divp>
+  <divm name="vform" id="panel">
+    <div1  >
+        <div>
+          <label for="name">Name:</label> <input type="text" id="name" name="name" 
+            placeholder="Your Name" minlength ="4" maxlength="20" autofocus>
+            <span id="p1" style='color:red;'></span>
+        
+        </div>
+        <div>
+          <label for="mail">E-mail:</label> <input type="email" id="email" name="email" 
+          placeholder="Your Email" >
+          <span id="p2" style='color:red;'></span>
+      
+        </div>
+        <div>
+          <label for="mbl">Mobile No.:</label> <input type="text" name="mobile" id="mobile"
+           maxlength="10" placeholder="Mobile Number"
+                             pattern="[0-9]{10}" >
+                             <span id="p3" style='color:red;'>
+                                
+                             </span>
+                             
+               
+        </div>
+
+		<div>
+          <label for="lap">Laptops:</label>
+          <input list="Laptops" name="company" placeholder="Select company" id="company">
+    <datalist id="Laptops">
+    <option value="Acer">
+    <option value="Asus">
+	<option value="Dell">
+    <option value="Hp">
+    <option value="Lenovo">
+    </datalist>
+	 <span id="lap_error" class="val_error">Company required</span>
+        </div>
+		<div>
+          <label for="date">Date:</label> <input type="date" id="date" name="user_date">
+        </div>
+		<div>
+          <label for="time">Time:</label> <input type="time" id="time" name="user_time">
+        </div>
+
+      </div1>
+    
+    
+      <button class="block">Submit</button>
+    
+    </divm>
+   
+
+</body>
+
+</html>
